@@ -411,7 +411,11 @@ public class FCitas extends javax.swing.JFrame {
     private void TIdPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_TIdPropertyChange
     }//GEN-LAST:event_TIdPropertyChange
 
-    
+    private void formWindowClosed(java.awt.event.WindowEvent evt) {                                  
+        if(cnt!=null){
+            cnt.desconectar();
+        }
+    } 
     
     
     
